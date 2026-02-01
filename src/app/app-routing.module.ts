@@ -12,17 +12,14 @@ const routes:Routes=[
   {path:'login',component:LoginComponent},
   // {path:'',component:LoginComponent},
   
-  {path:'home',component: HomeComponent,
-    children:[
-      {path:'menu',component:CartComponent}
-    ]
+  {path:'home',component: HomeComponent
    },
   {path:'orders',component: OrdersComponent },
   {path:'cart',component: CartComponent },
   {path:'favourites',component: FavouritesComponent },
   {path:'address',component: AdressComponent },
   {path:'foods/:item',component:CategoryComponent},
-  {path:'',redirectTo:'/home',pathMatch:'full'} //default route
+  {path:'',redirectTo:'/login',pathMatch:'full'} //default route
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
