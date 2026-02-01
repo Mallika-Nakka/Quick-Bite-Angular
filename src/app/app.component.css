@@ -1,0 +1,116 @@
+.bg-container{
+    /* height: 100%; */
+}
+
+.home-container{
+    width: 100%;
+    
+}
+.header-section{
+    height: 10%;
+    border-bottom: solid 2px rgb(206, 202, 202);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 25px;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    z-index:999;
+
+
+
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  background-color: #1ba672;
+  padding: 10px;
+  padding: 10px 50px 0px 50px;
+  /* text-align: center; */
+  z-index: 1000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.cart-img{
+    height: 25px !important;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.image{
+    height: 40px;
+    border-radius: 8px;
+}
+.searchbar{
+    padding: 5px;
+    height: 25px;
+    width: 300px;
+    border-radius: 5px;
+    border-top: solid 1px rgb(244, 237, 237) !important;
+    border-left: solid 1px rgb(244, 237, 237) !important;
+    border-right: solid 1px rgb(244, 237, 237) !important;
+    border: solid 2px orange;
+    outline: none ;
+    box-shadow: none;
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    /* padding: 5px; */
+    background-color: orange;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(240, 241, 243);
+    font-weight: bold;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 120px;
+    background-color: white;
+    border: 1px solid rgb(248, 163, 79);
+    box-shadow: 0 1px rgb(244, 187, 143);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.profile-container:hover .popup {
+  display: block;
+}
+.profile-container{
+    margin-right:40px;
+}
+
+.profile-options{
+    text-decoration: none;
+    color: orange;
+    padding: 5px;
+    width: 100px;
+    /* margin-bottom: 0px; */
+    display: inline-block !important;
+}
+.display-none{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+

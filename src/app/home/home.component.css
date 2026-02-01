@@ -1,0 +1,70 @@
+.home-container{
+    width: 100%;
+    
+}
+.top{
+    margin-top: 70px;
+}
+
+
+.carousel-img{
+    height: 250px !important ; 
+    width: 350px;
+    border-radius: 10px;
+}
+.item-image{
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+}
+
+.carousel-style{
+    border: 1px solid rgb(241, 176, 11);
+    margin-top: 5px;
+    padding: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+   
+}
+
+.food-description{
+    /* text-indent: 2%; */
+     width: 60%;
+}
+
+.items-container{
+    display: flex;
+    /* justify-content: space-between; */
+    /* overflow-y: scroll; */
+    flex-wrap: wrap;
+    
+   
+}
+.each-item{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+
+}
+.items-heading{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.menu-section{
+    padding-left: 25px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+
+

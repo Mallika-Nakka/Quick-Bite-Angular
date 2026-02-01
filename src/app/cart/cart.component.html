@@ -1,0 +1,52 @@
+<section class="cart-main-container" >
+    <div class="d-flex flex-column justify-content-center align-items-center " *ngIf="cartItemDetails.length>0" >
+        <div *ngFor="let item of cartItemDetails" class="cart-item-details d-flex mt-2">
+            <div class="mt-4">
+                <h6>{{item.name}}</h6>
+                <svg class="rupee" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"
+                     stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                <path d="M6 4H10.5M10.5 4C12.9853 4 15 6.01472 15 8.5C15 10.9853 12.9853 13 10.5 13H6L13 20M10.5 4H18M6 8.5H18" 
+                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <h6 class="price-details">{{getPriceDetails(item)}}</h6>
+            <div class="d-flex">
+                <div class="star-round">
+                    <!-- Inline SVG for star -->
+                    <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                    </svg>
+                </div>
+                <span class="rating" >{{item.rating}}</span>  
+            </div>
+            <p>{{item.description}}</p>
+            </div>
+            <div>
+                <div class="img-container">
+                   <img src="{{item.url}}" class="image-style" />
+                </div>
+
+                <div *ngIf="item.count>=1" class="count-container">
+                    <button class="count-btn" (click)="decreaseCount(item)">-</button>
+                    <span>{{item.count}}</span>
+                    <button class="count-btn" (click)="increaseCount(item)">+</button>
+                </div>
+            </div>
+        </div>
+ <button class="order-now mt-2">Order Now  </button>
+    </div>
+    <!-- <p>Total Amount</p> -->
+   
+    
+
+</section>
+
+<section class="cart-main-container d-flex justify-content-center align-items-center">
+
+    <div *ngIf="cartItemDetails.length==0" class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/assets/images/cart-empty.png" class="cart-img" >
+        <h3 class="cart-font" >Your cart is empty</h3>
+        <p>Explor   e the Home Page and Keep Your Cart Filled</p>
+        <button (click)="goHome()" class="go-home" >Go Home</button>
+    </div>
+
+</section>

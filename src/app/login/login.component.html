@@ -1,0 +1,29 @@
+<div class="bg-container"  >
+    <div class="card-container">
+        <div class="display-center">
+            <h2  >Login</h2>
+        </div>
+    <form class="login-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="email" class="label-style">Email  </label><br>
+            <input class="input-field" type="email" id="email" formControlName="email" placeholder=""/>
+            <!-- <p *ngIf="myForm.get('email')?.touched && myForm.get('email')?.errors?.['email']" >Please provide valid email </p> -->
+            <!-- <p *ngIf="myForm.get('email')?.touched && myForm.get('email')?.errors?.['required']" >Email is required</p> -->
+
+        </div>
+        <div class="field-container">
+            <label for="password" class="label-style">Password</label><br>
+            <input class="input-field" type="password" id="password" formControlName="password" placeholder=""/>
+        </div>
+        <p *ngIf="wrongCreds" class="error-message">Please provide valid email and password</p>
+         <div class="display-center">
+        <button type="submit" class="login-btn" [disabled]="myForm.invalid" >Login</button>
+         </div>
+    </form>
+    </div>
+</div>
+
+
+
+
+
