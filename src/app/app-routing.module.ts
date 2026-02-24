@@ -28,7 +28,7 @@ const routes:Routes=[
   {path:'cart',component: CartComponent },
   {path:'favourites',component: FavouritesComponent },
   {path:'address',component: AdressComponent },
-  // {path:'foods/:item',component:CategoryComponent},
+  {path:'foods/:item',component:CategoryComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'} //default route
 ]
 @NgModule({
