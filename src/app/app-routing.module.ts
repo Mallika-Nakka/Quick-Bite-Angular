@@ -8,6 +8,16 @@ import { CategoryComponent } from './category/category.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { AdressComponent } from './adress/adress.component';
 
+// export const prerenderRoutes=[
+//   {
+//     route:'foods/:item',
+//     getPrerenderParams:()=>{
+//       const items=['biryani','pizza','tiffins'];
+//       return items.map(item=>({item}))
+//     }
+//   }
+// ]
+
 const routes:Routes=[
   {path:'login',component:LoginComponent},
   // {path:'',component:LoginComponent},
@@ -18,7 +28,7 @@ const routes:Routes=[
   {path:'cart',component: CartComponent },
   {path:'favourites',component: FavouritesComponent },
   {path:'address',component: AdressComponent },
-  {path:'foods/:item',component:CategoryComponent},
+  // {path:'foods/:item',component:CategoryComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'} //default route
 ]
 @NgModule({
